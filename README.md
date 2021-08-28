@@ -1,13 +1,15 @@
-##说明
-将(first-order-motion-model)[https://github.com/AliaksandrSiarohin/first-order-model]以及衍生(motion-cosegmentation)[https://github.com/AliaksandrSiarohin/motion-cosegmentation]做了流程整合
+## 说明
+将[first-order-motion-model](https://github.com/AliaksandrSiarohin/first-order-model)以及衍生[motion-cosegmentation](https://github.com/AliaksandrSiarohin/motion-cosegmentation)做了流程整合
 ## 换脸流程
 - 准备好需要换脸的目标人脸视频及目标人脸并做预处理
 - 通过运行first-order-model中的crop.py得到ffmpeg命令用于裁剪视频
 - 通过运行motion-cosegmentation中的swap.py将裁剪后的目标人脸视频以及目标人脸进行互换
 - 通过第3步得到的ffmpeg命令中的人脸位置信息，将换脸之后的视频对齐回原视频
 
-#### 过程
+#### 人脸预处理流程
+preprocess文件夹下
 
+#### 过程
 1. 安装环境依赖
 
 ```bash
